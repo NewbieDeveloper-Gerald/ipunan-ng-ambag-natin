@@ -1,0 +1,18 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V3.0 Signer: certificate DN: CN=Ambag Natin Local Distribution, OU=Android, O=Ambag Natin, C=PH
+V3.0 Signer: certificate SHA-256 digest: e2922c9abfac233179dbe3237880ac8cb4dd821ee66abf260f65c5fdca7eaa45
+V3.0 Signer: certificate SHA-1 digest: 93d1b1a674229e475c291c2bdc42c4e79d1d45a4
+V3.0 Signer: certificate MD5 digest: b07b4805826688634e8ebeb609f20376
+V3.0 Signer: key algorithm: RSA
+V3.0 Signer: key size (bits): 2048
+V3.0 Signer: public key SHA-256 digest: 7338884b73caaa712ba3bb9ae8887aed4fd4723ce866bdc39419c57c027e732a
+V3.0 Signer: public key SHA-1 digest: 790261f5c46bb4ee974225b7a20edbdb9328695e
+V3.0 Signer: public key MD5 digest: 26735fd79fc1aa00b58b2f5d3baa7fe4

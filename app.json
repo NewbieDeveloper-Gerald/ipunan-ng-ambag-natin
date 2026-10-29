@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Ambag Natin",
+    "slug": "ambag-natin",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.gerald.ambagnatin",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#173d33",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.gerald.ambagnatin"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-sharing",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a photo for a group member.",
+          "cameraPermission": "Take a member profile photo.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "scheme": "ambagnatin"
+  }
+}

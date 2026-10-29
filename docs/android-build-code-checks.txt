@@ -1,0 +1,106 @@
+
+> ambag-natin@0.1.0 check
+> npm run typecheck && npm run lint && npm test
+
+
+> ambag-natin@0.1.0 typecheck
+> tsc --noEmit
+
+
+> ambag-natin@0.1.0 lint
+> eslint app src tests
+
+
+> ambag-natin@0.1.0 test
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# (node:42024) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: daily query: join today, left yesterday, future join and no payments
+ok 1 - daily query: join today, left yesterday, future join and no payments
+  ---
+  duration_ms: 22.17921
+  type: 'test'
+  ...
+# Subtest: daily query: multiple payments, deleted payment ignored, left_on inclusive
+ok 2 - daily query: multiple payments, deleted payment ignored, left_on inclusive
+  ---
+  duration_ms: 0.928712
+  type: 'test'
+  ...
+# Subtest: balance includes withdrawals, excludes soft deletes, supports undo
+ok 3 - balance includes withdrawals, excludes soft deletes, supports undo
+  ---
+  duration_ms: 0.75774
+  type: 'test'
+  ...
+# Subtest: database rejects invalid money and broken foreign keys
+ok 4 - database rejects invalid money and broken foreign keys
+  ---
+  duration_ms: 0.800392
+  type: 'test'
+  ...
+# Subtest: SQLite transaction rollback retains original data after failed replace
+ok 5 - SQLite transaction rollback retains original data after failed replace
+  ---
+  duration_ms: 0.601848
+  type: 'test'
+  ...
+# Subtest: backup rejects bad format/version and accepts roundtrip
+ok 6 - backup rejects bad format/version and accepts roundtrip
+  ---
+  duration_ms: 4.554224
+  type: 'test'
+  ...
+# Subtest: backup rejects dangling payments, missing photos, unsafe paths and duplicates
+ok 7 - backup rejects dangling payments, missing photos, unsafe paths and duplicates
+  ---
+  duration_ms: 3.638116
+  type: 'test'
+  ...
+# Subtest: date validation rejects impossible days and accepts leap years
+ok 8 - date validation rejects impossible days and accepts leap years
+  ---
+  duration_ms: 0.644022
+  type: 'test'
+  ...
+# Subtest: production restore statements roundtrip all tables, including deleted records
+ok 9 - production restore statements roundtrip all tables, including deleted records
+  ---
+  duration_ms: 10.81077
+  type: 'test'
+  ...
+# Subtest: money is parsed without floating point multiplication errors
+ok 10 - money is parsed without floating point multiplication errors
+  ---
+  duration_ms: 1.27202
+  type: 'test'
+  ...
+# Subtest: invalid and unsafe money is rejected
+ok 11 - invalid and unsafe money is rejected
+  ---
+  duration_ms: 0.893573
+  type: 'test'
+  ...
+# Subtest: PHP display
+ok 12 - PHP display
+  ---
+  duration_ms: 111.005298
+  type: 'test'
+  ...
+# Subtest: local dates and year boundaries
+ok 13 - local dates and year boundaries
+  ---
+  duration_ms: 0.458906
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1190.83735
